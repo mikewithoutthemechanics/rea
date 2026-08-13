@@ -68,6 +68,7 @@ export const CLI_COMMANDS = Object.freeze({
   evaluateReconstructionReadiness: "evaluate-reconstruction-readiness",
   commitReconstructionCoverage: "commit-reconstruction-coverage",
   queryReconstructionCoverage: "query-reconstruction-coverage",
+  gui: "gui",
 });
 
 /** Ordered primary CLI inventory; aliases are intentionally excluded. */

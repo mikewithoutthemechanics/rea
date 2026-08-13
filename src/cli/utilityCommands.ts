@@ -19,6 +19,7 @@ import { logCliCommand } from "../cliLogging.js";
 import { CLI_COMMANDS } from "../cliCommandNames.js";
 import type { Logger } from "../logger.js";
 import type { CliInstance } from "./types.js";
+import { registerGuiCommand } from "./webGuiCommand.js";
 
 export const registerUtilityCommands = (
   cli: CliInstance,
@@ -27,6 +28,7 @@ export const registerUtilityCommands = (
   registerCapabilityCommands(cli, logger);
   registerNativeCommands(cli, logger);
   registerReferenceSourceCommand(cli, logger);
+  registerGuiCommand(cli, logger);
 };
 
 const registerCapabilityCommands = (cli: CliInstance, logger: Logger): void => {
